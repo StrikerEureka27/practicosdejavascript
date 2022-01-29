@@ -1,2 +1,2 @@
 # practicosdejavascript
-Ejerecicios practicos realizado en javascript
+Ejercicios practicos realizado en javascript
