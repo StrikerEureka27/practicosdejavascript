@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicios basicos de JavaScript</title>
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <h1>Calculadora de Figuras geometricas</h1>
+        </header>
+        <div class="display">
+            <div id="displayResult" >
+            </div>
+            
+        </div>
+        <section class="FiguresPanel">
+            <div class="SquarePanel">
+                <h3>Cuadrado</h3>
+                <form action="">
+                    <ul>
+                        <li class="item-lista" >
+                            <h4 for="">Ingrese la longitud del lado: </h4>
+                            <input id="inputLadoCuadrado" type="number">
+                            <button id="" class="btn-blue" type="button" onclick="calcularPerimetroCudadro()" >Calcular perimetro</button>
+                        </li>
+                        <li class="item-lista" >
+                            <h4 for="inputCuadrado">Ingrese la longitud de la base: </h4>
+                            <input id="inputBaseCuadrado" type="number">
+                            <button id="" class="btn-green" type="button" onclick="calcularAreaCuadrado()" >Calcular area</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="TrianglePanel">
+                <h3>Triangulo</h3>
+                <form action="">
+                    <ul>
+                        <li class="item-lista" >
+                            <h4 for="">Ingrese la longitud del lado 01: </h4>
+                            <input id="inputLado1Triangulo" type="number">
+                            <h4 for="">Ingrese la longitud del lado 02: </h4>
+                            <input id="inputLado2Triangulo" type="number">
+                            <h4 for="">Ingrese la longitud del la base: </h4>
+                            <input id="inputLado3Triangulo" type="number">
+                            <button id="" type="button" class="btn-blue" onclick="calcularPerimetroTriangulo()" >Calcular perimetro</button>
+                        </li>
+                        <li class="item-lista" >
+                            <h4 for="">Ingrese la longitud del la base: </h4>
+                            <input id="inputBaseTriangulo" type="number">
+                            <h4 for="">Ingrese la longitud de la altura: </h4>
+                            <input id="inputAlturaTriangulo" type="number">
+                            <button id="" type="button" class="btn-green" onclick="calcularAreaTriangulo()">Calcular area</button>
+                        </li>
+                    </ul>
+            </div>
+            <div class="CirclePanel">
+                <h3>Circulo</h3>
+                <form action="">
+                    <ul>
+                        <li class="item-lista" >
+                            <h4 for="">Ingrese el radio: </h4>
+                            <input id="inputRadio1Circulo" type="number">
+                            <button id="" type="button" class="btn-blue" onclick="calcularPerimetroCirculo()">Calcular perimetro</button>
+                        </li>
+                        <li class="item-lista" >
+                            <h4 for="">Ingrese el radio: </h4>
+                            <input id="inputRadio2Circulo" type="number">
+                            <button id="" type="button" class="btn-green" onclick="calcularAreaCirculo()">Calcular area</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+        <button class="cleanDisplay">Limpiar pantalla</button>
+    </section>
+
+</body>
+<script src="figuras.js"></script>
+
+</html>
