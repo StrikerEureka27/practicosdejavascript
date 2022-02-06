@@ -10,7 +10,7 @@
     border: 1px solid black;
     background-color: rgb(59, 59, 59);
     width: 800px;
-    height: 550px;
+    height: 700px;
 }
 
 .display{
@@ -44,6 +44,8 @@ button{
     display: block;
 }
 
+/* Estilos de botones */
+
 .btn-green{
     background-color:  green;
     color: white;
@@ -54,6 +56,18 @@ button{
     background-color:  blue;
     color: white;
 }
+
+.btn-orange{
+    background-color: darkorange;
+    color: white;
+}
+
+.btn-purple{
+    color: white;
+    background-color: darkmagenta;
+}
+
+/* Titulos y navbar */
 
 h1{
     margin: 10px;
@@ -74,6 +88,16 @@ h3{
 h4{
     text-align: center;
     width: 100%;
+}
+
+nav{
+    height: 25px;
+    background-color: white;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
 }
 
 
@@ -125,3 +149,46 @@ h4{
     background-color: red;
     color: white;
 }
+
+.nav-li-item{
+    display: block;
+    margin: 10px;
+    float: left;
+    color: black;
+    line-height: 8px;
+}
+
+/* Estilos de descuentos */
+
+.discountPanel{
+    width: 100%;
+    height: 70%;
+}
+
+
+.discount{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid black;
+}
+
+.discountCoupons{
+    width: 49.58%;
+    height: 100%;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid black;
+    float: right;
+}
+
+.cuponesGenerados{
+    display: none;
+    color: blue;
+}
+ 
+/* Estilos para panel estadistico  */
+
+
+
+
+

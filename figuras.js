@@ -49,6 +49,14 @@ const calcularAreaTriangulo =  (baseTriangulo, alturaTriangulo) => {
 }
 
 
+const CalcularAlturaIsoseles = () => {
+    const inputLadoA = document.getElementById("inputLadoA").value;
+    const inputLadoB = document.getElementById("inputLadoB").value;
+    let alturaIsoseles = Math.sqrt((Math.pow(inputLadoA,2) - (inputLadoB,2 / 4)));
+    return mostrarInformacion(alturaIsoseles);
+}
+
+
 
 /*console.log("Los lados del triangulo: ");
 console.log("Lado 01: " + ladoTriangulo1 + CM);

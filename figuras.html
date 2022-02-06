@@ -11,13 +11,26 @@
 
 <body>
     <section class="container">
+        <nav>
+            <ul>
+                <li class="nav-li-item">
+                    <a href="./figuras.html">✔ Figuras</a>
+                </li>
+                <li class="nav-li-item">
+                    <a href="./descuentos.html">✔ Descuentos</a>
+                </li>
+                <li class="nav-li-item">
+                    <a href="./estadistica.html">✔ Estadistica</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
         <header>
             <h1>Calculadora de Figuras geometricas</h1>
         </header>
         <div class="display">
             <div id="displayResult" >
             </div>
-            
         </div>
         <section class="FiguresPanel">
             <div class="SquarePanel">
@@ -56,6 +69,14 @@
                             <h4 for="">Ingrese la longitud de la altura: </h4>
                             <input id="inputAlturaTriangulo" type="number">
                             <button id="" type="button" class="btn-green" onclick="calcularAreaTriangulo()">Calcular area</button>
+                        </li>
+                        <li class="item-lista" >
+                            <h3>Triangulo Isoseles</h3>
+                            <h4 for="">Ingrese la longitud del lado a: </h4>
+                            <input id="inputLadoA" type="number">
+                            <h4 for="">Ingrese la longitud de lado b: </h4>
+                            <input id="inputLadoB" type="number">
+                            <button id="" type="button" class="btn-orange" onclick="CalcularAlturaIsoseles()">Calcular altura</button>
                         </li>
                     </ul>
             </div>
