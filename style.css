@@ -67,6 +67,11 @@ button{
     background-color: darkmagenta;
 }
 
+.btn-teal{
+    color: white;
+    background-color: teal;
+}
+
 /* Titulos y navbar */
 
 h1{
@@ -92,7 +97,7 @@ h4{
 
 nav{
     height: 25px;
-    background-color: white;
+    background-color: rgb(195,195,195);;
 }
 
 nav ul li a{
@@ -183,12 +188,87 @@ nav ul li a{
 
 .cuponesGenerados{
     display: none;
-    color: blue;
 }
  
 /* Estilos para panel estadistico  */
 
+.estadisticaPanel{
+    width: 100%;
+    height: 80%;
+}
 
 
+.panelMediana{
+    width: 25%;
+    height: 80%;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid black;
+    float: right;
+}
 
+.panelModa{
+    width: 25%;
+    height: 80%;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid black;
+    float: right;
+}
 
+.panelPromedio{
+    width: 25%;
+    height: 80%;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid black;
+}
+
+.serieGenerada{
+    display: none;
+}
+
+.panelMedianaArmonica{
+    width: 25%;
+    height: 80%;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid black;
+    float: right;
+}
+
+.PanelSalario{
+    width: 100%;
+    height: 80%;
+}
+
+.PanelPaises{
+    width: 33.33%;
+    height: 80%;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid black;
+}
+
+.PanelAnalisis{
+    width: 33.33%;
+    height: 80%;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid black;
+    float: right;
+}
+
+.PanelAnalisisLibre{
+    width: 33.33%;
+    height: 80%;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid black;
+    float: right;
+}
+
+.listaGuatemala{
+    display: none;
+}
+
+.listaSalvador{
+    display: none;
+}
+
+.listaHonduras{
+    display: none;
+}

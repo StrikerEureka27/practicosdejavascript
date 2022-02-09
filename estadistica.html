@@ -14,6 +14,9 @@
         <nav>
             <ul>
                 <li class="nav-li-item">
+                    <a href="./index.html">✔ Principal</a>
+                </li>
+                <li class="nav-li-item">
                     <a href="./figuras.html">✔ Figuras</a>
                 </li>
                 <li class="nav-li-item">
@@ -21,6 +24,9 @@
                 </li>
                 <li class="nav-li-item">
                     <a href="./estadistica.html">✔ Estadistica</a>
+                </li>
+                <li class="nav-li-item">
+                    <a href="./salario.html">✔ Analsis salarial</a>
                 </li>
             </ul>
         </nav>
@@ -30,36 +36,73 @@
         <div class="display">
             <div id="displayResult"></div>
         </div>
-        <div class="estadisticaPanel">
-            <div class="panelMediana">
+        <section class="estadisticaPanel">
+            <div class="panelMedianaArmonica">
+                <h3>Media armonica</h3>
                 <form action="">
                     <ul>
                         <li class="item-lista" >
-                            <h3>Mediana</h3>
+                            <h4>Ingrese un numero a la serie: </h4>
+                            <input id="numeroSerieArmonica" type="number" >
+                            <button type="button" class="btn-green" onclick="AgregarSerieArmonica()" >Agregar</button>
+                            <button type="button" class="btn-teal" onclick="calcularMediaArmonica()" >Calcular media armonica</button>
+                        </li>
+                        <li id="serieGeneradaArmonica" class="item-lista" >
+                            <h3 class="serieGenerada" >Serie</h3>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="panelMediana">
+                <h3>Mediana</h3>
+                <form action="">
+                    <ul>
+                        <li class="item-lista" >
+                            <h4>Ingrese un numero a la serie: </h4>
+                            <input id="numeroSerieMediana" type="number" >
+                            <button type="button" class="btn-green" onclick="AgregarSerieMediana()" >Agregar</button>
+                            <button type="button" class="btn-purple" onclick="calcularMediana()" >Calcular mediana</button>
+                        </li>
+                        <li id="serieGeneradaMediana" class="item-lista" >
+                            <h3 class="serieGenerada" >Serie</h3>
                         </li>
                     </ul>
                 </form>
             </div>
             <div class="panelModa">
+                <h3>Moda</h3>
                 <form action="">
                     <ul>
                         <li class="item-lista" >
-                            <h3>Moda</h3>
+                            <h4>Ingrese un numero a la serie: </h4>
+                            <input id="numeroSerieModa" type="number"  >
+                            <button type="button" class="btn-green" onclick="AgregarSerieModa()">Agregar</button>
+                            <button type="button" class="btn-orange" onclick="calcularModa()">Calcular moda</button>
+                        </li>
+                        <li id="serieGeneradaModa" class="item-lista" >
+                            <h3 class="serieGenerada" >Serie</h3>
                         </li>
                     </ul>
                 </form>
             </div>
             <div class="panelPromedio">
+                <h3>Media aritmetica</h3>
                 <form action="">
                     <ul>
                         <li class="item-lista" >
-                            <h3>Media aritmetica</h3>
+                            <h4>Ingrese un numero a la serie: </h4>
+                            <input id="numeroSerieMedia" type="number">
+                            <button type="button" class="btn-green" onclick="AgregarSerieMedia()">Agregar</button>
+                            <button type="button" class="btn-blue" onclick="calcularMedia()">Calcular media</button>
+                        </li>
+                        <li id="serieGeneradaMedia"  class="item-lista" >
+                            <h3 class="serieGenerada" >Serie</h3>
                         </li>
                     </ul>
                 </form>
             </div>
-        </div>
     </section>
 </body>
+<script src="./estadistica.js"></script>
 
 </html>

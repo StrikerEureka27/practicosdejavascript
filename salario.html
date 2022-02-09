@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Analisis salarial</title>
+</head>
+<body>
+    <section class="container">
+        <nav>
+            <ul>
+                <li class="nav-li-item">
+                    <a href="./index.html">✔ Principal</a>
+                </li>
+                <li class="nav-li-item">
+                    <a href="./figuras.html">✔ Figuras</a>
+                </li>
+                <li class="nav-li-item">
+                    <a href="./descuentos.html">✔ Descuentos</a>
+                </li>
+                <li class="nav-li-item">
+                    <a href="./estadistica.html">✔ Estadistica</a>
+                </li>
+                <li class="nav-li-item">
+                    <a href="./salario.html">✔ Analisis salarial</a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Analisis salarial</h1>
+        </header>
+        <div class="display">
+            <div id="displayResult"></div>
+        </div>
+        <section class="PanelSalario" >
+            <div class="PanelAnalisisLibre">
+                <h3>Analisis libre</h3>
+            </div>
+            <div class="PanelAnalisis" >
+                <h3>Analisis salarial</h3>
+                <form action="">
+                    <ul>
+                        <li class="item-lista" > 
+                            <h3>Calculo</h3>
+                            <button type="button" class="btn-teal" onclick="calcularTotalSalario()" >Total de salarios</button>
+                            <button type="button" class="btn-blue" onclick="calcularTotalPromedio()" >Promedio de salarios</button>
+                            <button type="button" class="btn-orange" onclick="calcularMediana()" >Mediana de salarial</button>
+                            <button type="button" class="btn-purple" onclick="calcularTop()" >Top 10% salarios</button>
+                        </li>
+                        <li id="templateListaGuatemala" class="item-lista">
+                            <h3 id="GuatemalaGenerados" class="listaGuatemala" >Guatemala</h3>
+                        </li>
+                        <li id="templateListaSalvador" class="item-lista">
+                            <h3 id="SalvadorGenerados" class="listaSalvador" >El salvador</h3>
+                        </li>
+                        <li id="templateListaHonduras" class="item-lista">
+                            <h3 id="HondurasGenerados" class="listaHonduras" >Honduras</h3>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="PanelPaises" >
+                <h3>Paises</h3>
+                <form action="">
+                    <ul>
+                        <li class="item-lista" >
+                            <h3>Guatemala</h3>
+                            <h4>Ingrese nombre: </h4>
+                            <input id="nameGuatemala" type="text">
+                            <h4>Ingrese salario: </h4>
+                            <input id="salaryGuatemala"  type="number">
+                            <button type="button" class="btn-green" onclick="addElementGuatemala()" >Agregar</button>
+                        </li>
+                        <li class="item-lista" >
+                            <h3>El Salvador</h3>
+                            <h4>Ingrese nombre: </h4>
+                            <input id="nameSalvador" type="text">
+                            <h4>Ingrese salario: </h4>
+                            <input id="salarySalvador"  type="number">
+                            <button type="button" class="btn-green" onclick="addElementSalvador()" >Agregar</button>
+                        </li>
+                        <li class="item-lista" >
+                            <h3>Honduras</h3>
+                            <h4>Ingrese nombre: </h4>
+                            <input id="nameHonduras" type="text">
+                            <h4>Ingrese salario: </h4>
+                            <input id="salaryHonduras"  type="number">
+                            <button type="button" class="btn-green" onclick="addElementHonduras()" >Agregar</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </section>
+    </section>
+</body>
+<script src="./salario.js"></script>
+</html>
