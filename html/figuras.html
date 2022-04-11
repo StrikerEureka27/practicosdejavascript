@@ -45,13 +45,13 @@
                     <ul>
                         <li class="item-lista" >
                             <h4 for="">Ingrese la longitud del lado: </h4>
-                            <input id="inputLadoCuadrado" type="number">
-                            <button id="" class="btn-blue" type="button" onclick="calcularPerimetroCudadro()" >Calcular perimetro</button>
+                            <input id="inputSideSquare" type="number">
+                            <button id="btnCalculatePerimeter" class="btn-blue" type="button" >Calcular perimetro</button>
                         </li>
                         <li class="item-lista" >
                             <h4 for="inputCuadrado">Ingrese la longitud de la base: </h4>
-                            <input id="inputBaseCuadrado" type="number">
-                            <button id="" class="btn-green" type="button" onclick="calcularAreaCuadrado()" >Calcular area</button>
+                            <input id="inputBaseSquare" type="number">
+                            <button id="btnCalculateArea" class="btn-green" type="button" >Calcular area</button>
                         </li>
                     </ul>
                 </form>
@@ -62,19 +62,21 @@
                     <ul>
                         <li class="item-lista" >
                             <h4 for="">Ingrese la longitud del lado 01: </h4>
-                            <input id="inputLado1Triangulo" type="number">
+                            <input id="inputSideATriangle" type="number">
                             <h4 for="">Ingrese la longitud del lado 02: </h4>
-                            <input id="inputLado2Triangulo" type="number">
+                            <input id="inputSideBTriangle" type="number">
                             <h4 for="">Ingrese la longitud del la base: </h4>
-                            <input id="inputLado3Triangulo" type="number">
-                            <button id="" type="button" class="btn-blue" onclick="calcularPerimetroTriangulo()" >Calcular perimetro</button>
+                            <input id="inputBaseTriangle" type="number">
+                            <h4 for="">Ingrese la altura: </h4>
+                            <input id="inputHeightTriangle" type="number">
+                            <button id="btnCalculatePerimeterTriangle" type="button" class="btn-blue" >Calcular perimetro</button>
+                            <button id="btnCalculateAreaTriangle" type="button" class="btn-green">Calcular area</button>
+                            <button id="" type="button" class="btn-orange" onclick="CalcularAlturaIsoseles()">Calcular altura</button>
                         </li>
-                        <li class="item-lista" >
+                        <!-- <li class="item-lista" >
                             <h4 for="">Ingrese la longitud del la base: </h4>
                             <input id="inputBaseTriangulo" type="number">
-                            <h4 for="">Ingrese la longitud de la altura: </h4>
-                            <input id="inputAlturaTriangulo" type="number">
-                            <button id="" type="button" class="btn-green" onclick="calcularAreaTriangulo()">Calcular area</button>
+
                         </li>
                         <li class="item-lista" >
                             <h3>Triangulo Isoseles</h3>
@@ -82,8 +84,8 @@
                             <input id="inputLadoA" type="number">
                             <h4 for="">Ingrese la longitud de lado b: </h4>
                             <input id="inputLadoB" type="number">
-                            <button id="" type="button" class="btn-orange" onclick="CalcularAlturaIsoseles()">Calcular altura</button>
-                        </li>
+                            
+                        </li> -->
                     </ul>
             </div>
             <div class="CirclePanel">
@@ -109,7 +111,6 @@
     </section>
 
 </body>
-<script src="../js/DrawResult.js"></script>
-<script src="../js/figuras.js"></script>
+<script src="../js/main.js" type="module"></script>
 
 </html>
