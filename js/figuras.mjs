@@ -1,3 +1,5 @@
+import { DrawResult } from "./DrawResult.mjs";
+const PI = Math.PI;
 
 class Figuras {
     constructor({
@@ -5,7 +7,7 @@ class Figuras {
         area = 0,
         perimeter = 0
     }) {
-        this._name = name,
+            this._name = name,
             this._area = area,
             this._perimeter = perimeter
     }
@@ -45,11 +47,19 @@ class Square extends Figuras {
     }
 
     calculatePerimeterSquare() {
-        return console.log(this._side * 4);
+        const perimeter = this._side * 4;
+        const draw =  new DrawResult({
+            result: perimeter
+        })
+        draw.drawResult();
     }
 
     calculateAreaSquare() {
-        return console.log(Math.pow(this._base, 2));
+        const area = Math.pow(this._base, 2);
+        const draw =  new DrawResult({
+            result: area
+        })
+        draw.drawResult();
     }
 }
 
@@ -105,52 +115,75 @@ class Triangle extends Figuras {
 
 
     calculatePerimeterTriangle() {
-        return console.log(this._sideA + this._sideB + this._base);
+        const perimeter = this._sideA + this._sideB + this._base;
+        const draw =  new DrawResult({
+            result: perimeter
+        })
+        draw.drawResult();
     }
 
     calculateAreaTriangle(){
-        return console.log((this._base * this._height) / 2); 
+        const area = (this._base * this._height) / 2;
+        const draw =  new DrawResult({
+            result: area
+        })
+        draw.drawResult();
     }
+
+    CalculateAreaIsoseles(){
+        let area = (this._base * this._height) / 2;
+        const draw =  new DrawResult({
+            result: area
+        })
+        draw.drawResult();
+    }
+
+
 }
 
-export { Square, Triangle };
+class Circle extends Figuras {
+    constructor(props){
+        super(props);
+        this._radio = 0;
+        this._diameter = 0;
+    }
 
+    set radio(radio){
+        this._radio = radio;
+    }
 
-const PI = Math.PI;
+    get radio(){
+        return this._radio;
+    }
 
+    set diameter(diameter){
+        this._diameter = diameter;
+    }
 
+    get diameter(){
+        return this._diameter;
+    }
 
+    calculatePerimeterCircle(){
+        let perimeter = (this._radio * 2) * PI;
+        const draw =  new DrawResult({
+            result: perimeter
+        })
+        draw.drawResult();
+    }
 
+    calculateAreaCircle(){
+        const area = PI * (Math.pow(this._diameter, 2));
+        const draw =  new DrawResult({
+            result: area
+        })
+        draw.drawResult();
+    }
 
-
-const CalcularAlturaIsoseles = () => {
-    const inputLadoA = document.getElementById("inputLadoA").value;
-    const inputLadoB = document.getElementById("inputLadoB").value;
-    let alturaIsoseles = Math.sqrt((Math.pow(inputLadoA, 2) - (inputLadoB, 2 / 4)));
-    return mostrarInformacion(alturaIsoseles);
 }
 
+export { Square, Triangle, Circle };
 
-
-const calcularPerimetroCirculo = (radioCirculo) => {
-    const inputRadio1Circulo = document.getElementById("inputRadio1Circulo");
-    let perimetroCirculo = (inputRadio1Circulo.value * 2) * PI;
-    return mostrarInformacion(perimetroCirculo);
-}
-
-const calcularAreaCirculo = (radioCirculo) => {
-    const inputRadio2Circulo = document.getElementById("inputRadio2Circulo");
-    let areaCirculo = Math.pow(inputRadio2Circulo.value, 2) * PI;
-    return mostrarInformacion(areaCirculo);
-}
-
-
-const mostrarInformacion = (resultado) => {
-    const displayResult = document.getElementById("displayResult");
-    const display = document.createElement("h2");
-    display.textContent = resultado;
-    return displayResult.appendChild(display);
-}
 
 
 

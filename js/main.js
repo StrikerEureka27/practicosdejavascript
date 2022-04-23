@@ -1,4 +1,5 @@
-import { Square, Triangle } from "./figuras.mjs";
+import { Square, Triangle , Circle} from "./figuras.mjs";
+import { DrawResult } from "./DrawResult.mjs";
 
 const inputSideSquare = document.getElementById("inputSideSquare");
 const btnCalculatePerimeter = document.getElementById("btnCalculatePerimeter");
@@ -13,6 +14,17 @@ const inputHeightTriangle = document.getElementById("inputHeightTriangle");
 const btnCalculatePerimeterTriangle = document.getElementById("btnCalculatePerimeterTriangle");
 const btnCalculateAreaTriangle = document.getElementById("btnCalculateAreaTriangle");
 
+const inputBaseIsoseles = document.getElementById("inputBaseIsoseles");
+const inputHeightIsoseles = document.getElementById("inputHeightIsoseles");
+const btnCalculateAreaIsoseles = document.getElementById("btnCalculateAreatIsoseles");
+
+const inputRadio1Circle = document.getElementById("inputRadio1Circle");
+const btnInputRadio1Circle = document.getElementById("btnInputRadio1Circle");
+
+const inputRadio2Circle = document.getElementById("inputRadio2Circle");
+const btnInputRadio2Circle = document.getElementById("btnInputRadio2Circle");
+
+const btnClean = document.getElementById("btnClean");
 
 
 btnCalculatePerimeter.onclick = ()=> {
@@ -43,7 +55,7 @@ btnCalculatePerimeterTriangle.onclick = () => {
 
 btnCalculateAreaTriangle.onclick = () => {
     const objectTrinagle = new Triangle({
-        name: "Trinagle", 
+        name: "Triangle", 
     });
     objectTrinagle.base = parseInt(inputBaseTriangle.value);
     objectTrinagle.height = parseInt(inputHeightTriangle.value);
@@ -51,5 +63,34 @@ btnCalculateAreaTriangle.onclick = () => {
 }
 
 
+btnCalculateAreaIsoseles.onclick =()=> {
+    const objectTrinagle = new Triangle({
+        name: "Triangle"
+    })
+    objectTrinagle.base = inputBaseIsoseles.value;
+    objectTrinagle.height = inputHeightIsoseles.value;
+    objectTrinagle.CalculateAreaIsoseles();
+}
 
+btnInputRadio1Circle.onclick = () => {
+    const objectCircle = new Circle({
+        name: "Circle"
+    })
+    objectCircle.radio = inputRadio1Circle.value;
+    objectCircle.calculatePerimeterCircle();
+}
 
+btnInputRadio2Circle.onclick = () => {
+    const objectCircle = new Circle({
+        name: "Circle"
+    })
+    objectCircle.diameter = inputRadio2Circle.value;
+    objectCircle.calculateAreaCircle();
+}
+
+btnClean.onclick = () => {
+    const clean = new DrawResult({
+        result: 0
+    });
+    clean.cleanDisplay();
+}

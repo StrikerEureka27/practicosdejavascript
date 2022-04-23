@@ -71,7 +71,14 @@
                             <input id="inputHeightTriangle" type="number">
                             <button id="btnCalculatePerimeterTriangle" type="button" class="btn-blue" >Calcular perimetro</button>
                             <button id="btnCalculateAreaTriangle" type="button" class="btn-green">Calcular area</button>
-                            <button id="" type="button" class="btn-orange" onclick="CalcularAlturaIsoseles()">Calcular altura</button>
+                        </li>
+                        <li class="item-lista" >
+                            <h3>Calculo area Isoseles</h3>
+                            <h4>Ingrese la base del triangulo:</h4>
+                            <input id="inputBaseIsoseles" type="text" type="number">
+                            <h4>Ingrese la altura del triangulo:</h4>
+                            <input id="inputHeightIsoseles" type="text" type="number">
+                            <button id="btnCalculateAreatIsoseles" type="button" class="btn-green" >Calcular area</button>
                         </li>
                         <!-- <li class="item-lista" >
                             <h4 for="">Ingrese la longitud del la base: </h4>
@@ -94,20 +101,20 @@
                     <ul>
                         <li class="item-lista" >
                             <h4 for="">Ingrese el radio: </h4>
-                            <input id="inputRadio1Circulo" type="number">
-                            <button id="" type="button" class="btn-blue" onclick="calcularPerimetroCirculo()">Calcular perimetro</button>
+                            <input id="inputRadio1Circle" type="number">
+                            <button id="btnInputRadio1Circle" type="button" class="btn-blue" >Calcular perimetro</button>
                         </li>
                         <li class="item-lista" >
                             <h4 for="">Ingrese el radio: </h4>
-                            <input id="inputRadio2Circulo" type="number">
-                            <button id="" type="button" class="btn-green" onclick="calcularAreaCirculo()">Calcular area</button>
+                            <input id="inputRadio2Circle" type="number">
+                            <button id="btnInputRadio2Circle" type="button" class="btn-green" >Calcular area</button>
                         </li>
                     </ul>
                 </form>
             </div>
             <div class="clearfix"></div>
         </section>
-        <button class="cleanDisplay">Limpiar pantalla</button>
+        <button id="btnClean" class="cleanDisplay">Limpiar pantalla</button>
     </section>
 
 </body>

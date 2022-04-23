@@ -52,6 +52,7 @@ button{
 }
 
 
+
 .btn-blue{
     background-color:  blue;
     color: white;
@@ -158,10 +159,14 @@ nav ul li a:hover{
     width: 98.5%;
 }
 
-.cleanDisplay{
+.cleanDisplay:hover{
     width: 100%;
-    background-color: red;
+    background-color: lightcoral;
     color: white;
+}
+
+.cleanDisplay{
+    background-color: red;
 }
 
 .nav-li-item{
